@@ -1,7 +1,7 @@
 # Plant-disease-explanation
 Explanation of citrus disease detection with deep learning
 
-1- Due to massive size of the files (the weights of the customized ResNet50 model calculated for reusability, train set, and test set (numply arrays) are available at  https://drive.google.com/drive/folders/1_CC8PAPPy9TEaaSVTTfUcEPgWk3O8bXx?usp=sharing
+1- Due to massive size of the files (the weights of the customized ResNet50 model calculated for reusability, train set, and test set (numpy arrays) are available at  https://drive.google.com/drive/folders/1_CC8PAPPy9TEaaSVTTfUcEPgWk3O8bXx?usp=sharing
 
 Generally you can follow the instructions below for implementation of steps 1&2:
 
