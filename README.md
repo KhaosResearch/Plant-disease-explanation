@@ -3,6 +3,7 @@ Explanation of citrus disease detection with deep learning
 1- Due to massive size of the files (the weights of the customized ResNet50 model calculated for reusability, train set, and test set (numply arrays) are available at  https://drive.google.com/drive/folders/1_CC8PAPPy9TEaaSVTTfUcEPgWk3O8bXx?usp=sharing
 
 Generally you can follow the instructions below for implementation of steps 1&2:
+
 Step 1) There are either two ways to run  step 1 for PlantDisease.py file.
 
 First, the Original dataset is available at https://data.mendeley.com/datasets/3f83gxmv57/2  based on https://www.sciencedirect.com/science/article/pii/S2352340919306948
