@@ -17,9 +17,12 @@ There are either two ways to run  step 1 for __PlantDisease.py__ file. First, th
 Second, you can utilize and upload X1_train, y1_train, X1_test, and y1_test. These files are in .npy format and were extracted using a stratified data split, which precisely aligns with the results presented in the paper. In that case, you don't need to run lines 44-203 and 228-264. You only need to define and compile the training model in lines 209-222 and upload the previously saved weights (hdf5 file). Don't forget to update the address in line 272. Finally, run line 272 and 274 to calculate the yhat. 
 
 __Step 2)__  __MOGAE.py__ .
+
 Assuming the model has already been defined and compiled, the instructions for MOGAE are provided as follows:
 
-Run Lines 1-293 for corresponding functions initially
+Run Lines 1-293 for corresponding functions initially. Next, execute the systematic search from lines 295 to 357. Ensure to define the test image to be explained in line 299, which by default is set to 5, indicating that the 5th image in the test sample will be the subject of explanation. Next, execute lines 359-623 for the main body of MOGAE. Subsequently, run lines 631-660 to extract _optimal images_ from the Pareto front. Proceed with executing lines 672-685 for majority voting and generating the _MV image_. Following this, the _explanation image_, an intersection of the _base image_ and _MV image_, can be generated from lines 707-724. Lastly, lines 733 until the end encompass codes for generating plots, normalized explanation error, LIME, and more.
+
+
 
 <!-- Step 2) You can run lines 320-362 for LIME, Grad-CAM, and SHAP explanation
 
