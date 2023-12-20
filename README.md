@@ -7,9 +7,8 @@ There are two .py files where the pipeline for developing the fine-tuned ResNet5
 
 
 
-__NOTICE__ ==> Due to massive size of the files (the weights of the customized ResNet50 model calculated for reusability, X1_train, y1_train, X1_test, y1_test (numpy arrays) are available [Here](https://drive.google.com/drive/folders/1_CC8PAPPy9TEaaSVTTfUcEPgWk3O8bXx?usp=sharing)
+__NOTICE__ ==> Due to massive size of the files (the weights of the customized ResNet50 model calculated for reusability, X1_train, y1_train, X1_test, y1_test (numpy arrays) are available [here](https://drive.google.com/drive/folders/1_CC8PAPPy9TEaaSVTTfUcEPgWk3O8bXx?usp=sharing)
 
-Generally you can follow the instructions below for implementation of steps 1&2:
 
 __Step 1)__  __PlantDisease.py__.
 
