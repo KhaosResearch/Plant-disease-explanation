@@ -20,9 +20,13 @@ __Step 2)__  __MOGAE.py__ .
 
 Assuming the model has already been defined and compiled, the instructions for MOGAE are provided as follows:
 
-Run Lines 1-293 for corresponding functions initially. Next, execute the systematic search from lines 295 to 357. Ensure to define the test image to be explained in line 299, which by default is set to 5, indicating that the 5th image in the test sample will be the subject of explanation. Next, execute lines 359-623 for the main body of MOGAE. Subsequently, run lines 631-660 to extract _optimal images_ from the Pareto front. Proceed with executing lines 672-685 for majority voting and generating the _MV image_. Following this, the _explanation image_, an intersection of the _base image_ and _MV image_, can be generated from lines 707-724. Lastly, lines 733 until the end encompass codes for generating plots, normalized explanation error, LIME, and more.
+Run Lines 1-293 for the corresponding functions initially. Next, execute the systematic search from lines 295 to 357. Ensure to define the test image to be explained in line 299, which by default is set to 5, indicating that the 5th image in the test sample will be the subject of explanation. Next, execute lines 359-623 for the main body of MOGAE. Subsequently, run lines 631-660 to extract _optimal images_ from the Pareto front. Proceed with executing lines 672-685 for majority voting and generating the _MV image_. Following this, the _explanation image_, an intersection of the _base image_ and _MV image_, can be generated from lines 707-724. Lastly, lines 733 until the end encompass codes for generating plots, normalized explanation error, LIME, and more.
 
+For the purpose of reusability:
+__ATTENTION 1__  The images that have been used in the paper were 5th(Black spot), 29th(Canker), 46th(Greening), and 55th(Healthy) image from X1_test based on our split.
 
+__ATTENTION 2__ The delineated images by SLIC algorithm are image5_delineated.npy(Black spot), image29_delineated.npy(Canker), image46_delineated.npy(Greening), and image55_delineated.npy(Healthy). You can use them in lines 759-771 for respective calculations.
+__ATTENTION 3__ You can also use the maximum error of explanation for each image using worst5.npy(Black spot), worst29.npy(Canker), worst46.npy(Greening), and worst55.npy(Healthy). You can use them in lines 759-771 for respective calculations.
 
 <!-- Step 2) You can run lines 320-362 for LIME, Grad-CAM, and SHAP explanation
 
