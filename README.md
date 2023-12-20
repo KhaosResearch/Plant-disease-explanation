@@ -24,10 +24,10 @@ Run Lines 1-293 for the corresponding functions initially. Next, execute the sys
 
 For the purpose of reusability:
 
-__ATTENTION 1__  The images that have been used in the paper were 5th(Black spot), 29th(Canker), 46th(Greening), and 55th(Healthy) image from X1_test based on our split.
+__ATTENTION 1:__  The images that have been used in the paper are 5th(Black spot), 29th(Canker), 46th(Greening), and 55th(Healthy) image from X1_test based on our split.
 
-__ATTENTION 2__ The delineated images by SLIC algorithm are image5_delineated.npy(Black spot), image29_delineated.npy(Canker), image46_delineated.npy(Greening), and image55_delineated.npy(Healthy). You can use them in lines 759-771 for respective calculations.
-__ATTENTION 3__ You can also use the maximum error of explanation for each image using worst5.npy(Black spot), worst29.npy(Canker), worst46.npy(Greening), and worst55.npy(Healthy). You can use them in lines 759-771 for respective calculations.
+__ATTENTION 2:__ The delineated images by SLIC algorithm are image5_delineated.npy(Black spot), image29_delineated.npy(Canker), image46_delineated.npy(Greening), and image55_delineated.npy(Healthy). You can use them in lines 759-771 for calculating normalized error of explanation by initializing the intended _delineation_ variable in line 761. _black_back_ is the _explanation image_.
+__ATTENTION 3:__ You can also calculate the maximum error of explanation for each image using worst5.npy(Black spot), worst29.npy(Canker), worst46.npy(Greening), and worst55.npy(Healthy). You can use them in lines 759-771 for respective calculations. by initializing the intended _worst_ variable in line 760.
 
 <!-- Step 2) You can run lines 320-362 for LIME, Grad-CAM, and SHAP explanation
 
