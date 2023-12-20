@@ -1,7 +1,11 @@
 # Plant-disease-explanation
 Explanation of citrus disease detection using Multi-Objective Genetic Algorithm Explainer (MOGAE)
+
 The corresponding paper is UNDER REVIEW.
+
 There are two .py files where the pipeline for developing the fine-tuned ResNet5 is implemented in __PlantDisease.py__ and the pipeline for developing MOGAE is implemented in __MOGAE.py__. Hence, the instructions for each file are provided separately as follows:
+
+
 1)_The instruction of __PlantDisease.py___: 
 
 1- Due to massive size of the files (the weights of the customized ResNet50 model calculated for reusability, X1_train, y1_train, X1_test, y1_test (numpy arrays) are available at  https://drive.google.com/drive/folders/1_CC8PAPPy9TEaaSVTTfUcEPgWk3O8bXx?usp=sharing
