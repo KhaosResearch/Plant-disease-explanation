@@ -512,9 +512,9 @@ for es in range (MaxIt):
    if distance>3 and tagcheck==10:
                
                    probability= probability + alpha *(1- probability) 
+                   print("distance", distance, 'tagcheck', tagcheck)
                    print(probability)
                    print('Densifying')
-                   print("distance", distance, 'tagcheck', tagcheck)
                    for k in range(nm):
    
                         i=random.randint(0,nPop-1)
@@ -598,17 +598,17 @@ for es in range (MaxIt):
    
    if  distance> 3 and abs(distance-dis[-1])==0:
        tagcheck=tagcheck+1
-       tagflag=1
+       # tagflag=1
        
    if distance> 3 and abs(distance-dis[-1])!=0:
        tagcheck=1
-       tagflag=1
+       # tagflag=1
    if  distance <= 3 and abs(distance-dis[-1])==0:
       tagflag=tagflag+1
-      tagcheck=1
+       # tagcheck=1
    if  distance <= 3 and abs(distance-dis[-1])!=0:
        tagflag=1
-       tagcheck=1
+       # tagcheck=1
    dis.append(distance)
    if (distance < best_distance) or (distance == best_distance and len(FF) > best_pareto_size):
         best_distance = distance
