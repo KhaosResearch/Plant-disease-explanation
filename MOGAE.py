@@ -292,7 +292,7 @@ def deep_copy_struct(initial_struct):
         im=copy.deepcopy(initial_struct.im)
     )
 
-#############  HEURISTIC SEARCH
+#############  SYSTEMATIC SEARCH
 from ypstruct import struct
 
 WIN=[]
@@ -867,4 +867,17 @@ plt.xlabel('Iteration')
 plt.ylabel('Ω')
 plt.show()   
 
- 
+####################### Plot distances (Accuracy deviation)########################
+n_adaptive_plot,=plt.plot(ddNA,label='NSGA-II without adaptive mutation')
+adaptive_plot, = plt.plot(ddA, label='NSGA-II with adaptive mutation')
+plt.xlabel('Iteration')
+plt.ylabel('Accuracy deviation from the original image')
+plt.grid(True)
+plt.title('Black spot')  
+plt.ylim(0,50)
+plt.legend(loc = "upper right")
+plt.text(2, 7, '$\\theta$ = 1', fontsize=12, color=adaptive_plot.get_color())
+plt.text(2,11, '$\\theta$ = 1', fontsize=12, color=n_adaptive_plot.get_color())
+
+dis2=np.array(dis)
+ddNA=np.load("/home/hossein/leaf project 2023/MGAE/Final results MOGAE Vs. EGAE 50 and 100 superpixels/distances/dis2BS.npy", allow_pickle=True)
