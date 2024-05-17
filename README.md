@@ -28,7 +28,9 @@ __ATTENTION 1:__  The images that have been used in the paper are 5th(Black spot
 
 __ATTENTION 2:__ The delineated images by SLIC algorithm are image5_delineated.npy(Black spot), image29_delineated.npy(Canker), image46_delineated.npy(Greening), and image55_delineated.npy(Healthy). You can use them in lines 759-771 for calculating normalized error of explanation by initializing the intended _delineation_ variable in line 761. _black_back_ is the _explanation image_.
 
-__ATTENTION 3:__ You can also calculate the maximum error of explanation for each image using worst5.npy(Black spot), worst29.npy(Canker), worst46.npy(Greening), and worst55.npy(Healthy). You can use them in lines 759-771 for respective calculations. by initializing the intended _worst_ variable in line 760.
+__ATTENTION 3:__ You can also calculate the maximum error of explanation for each image using worst5.npy(Black spot), worst29.npy(Canker), worst46.npy(Greening), and worst55.npy(Healthy). You can use them in lines 759-771 for respective calculations by initializing the intended _worst_ variable in line 760.
+
+__ATTENTION 4:__ To illustrate accuracy deviation (𝜃) between the best solution in the Pareto front and the original image across consecutive iterations in NSGA-II with H=100 (Figure 10 in the paper) you can upload the corresponding files in accuracy deviation folder. Use lines 871-883 and remember to load the image with allow_pickle=True in line 883 first.
 
 <!-- Step 2) You can run lines 320-362 for LIME, Grad-CAM, and SHAP explanation
 
