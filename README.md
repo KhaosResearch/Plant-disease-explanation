@@ -1,7 +1,7 @@
 # Plant-disease-explanation
 Explanation of citrus disease detection using Multi-Objective Genetic Algorithm Explainer (MOGAE)
 
-# Please cite this paper:
+# Please cite this paper
 Hossein Nematzadeh, José García-Nieto, Sandro Hurtado, José F. Aldana-Montes, Ismael Navas-Delgado,
 Model-agnostic local explanation: Multi-objective genetic algorithm explainer, Engineering Applications of Artificial Intelligence,
 Volume 139, Part B, 2025, 109628, https://doi.org/10.1016/j.engappai.2024.109628.
